@@ -1,0 +1,47 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-around_medium" if:true={visible}>
+			<h1 class="slds-text-heading_large">Trazer dados da classe!!</h1>
+
+			<img src={img1}>
+
+			<p if:true={g1}> Nome: {nome}</p>
+			<p if:true={g1}> Telefone: {tel}</p>
+			<p if:true={g1}> CPF: {cpf}</p>
+			<p if:true={g1}> Idade: {ida} anos</p>
+			<p if:false={g1}> Nome: {nome1}</p>
+			<p if:false={g1}> Telefone: {tel1}</p>
+			<p if:false={g1}> CPF: {cpf1}</p>
+			<p if:false={g1}> Idade: {ida1} anos</p>
+			<br>
+			<lightning-button variant="brand" label="Clica em mim" title="alterar info" onclick={alteraValores}
+				class="slds-m-left_x-small"></lightning-button>
+			<br>
+			<br>
+		</div>
+
+
+		<div class="slds-m-around_medium" if:false={visible}>
+			<h1 class="slds-text-heading_large">Outros dados!!</h1>
+
+			<img src={img2}>
+
+			<p if:false={g1}> Email: {ema} </p>
+			<p if:false={g1}> Instagram: <a href={inst} target="_blank"> @gabrielangelo.msa </a></p>
+			<p if:false={g1}> Linkedin: <a href={link} target="_blank"> Gabriel Ângelo </a></p>
+			<p if:true={g1}> Email: {ema1} </p>
+			<p if:true={g1}> Instagram: <a href={inst1} target="_blank"> @instagram </a></p>
+			<p if:true={g1}> Linkedin: <a href={link1} target="_blank"> Ângelo Gabriel </a></p>
+			<br>
+			<lightning-button variant="brand" label="Clica em mim" title="alterar info" onclick={alteraValores}
+				class="slds-m-left_x-small"></lightning-button>
+			<br>
+			<br>
+		</div>
+
+		<br>
+
+		<lightning-button variant="brand" label="Clica vai" title="alterar info" onclick={trocarDiv}
+			class="slds-m-left_x-small"></lightning-button>
+	</lightning-card>
+</template>

@@ -1,0 +1,17 @@
+h1{
+  text-align: center;
+  color: black; 
+  text-shadow: grey 0.1em 0.1em 0.1em
+}
+div{
+  background-color: chartreuse;
+  border-radius: 5px;
+  border: 2px solid;
+}
+div img{
+  margin-top: 10px;
+}
+div p{
+  margin-top: 10px;
+  margin-left: 5px;
+}
